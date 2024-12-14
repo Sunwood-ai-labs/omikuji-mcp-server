@@ -1,6 +1,6 @@
 {
   "name": "@sunwood-ai-labs/omikuji-mcp-server",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "おみくじを提供するMCPサーバー",
   "main": "build/index.js",
   "type": "module",

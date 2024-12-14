@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/header.svg" alt="Omikuji MCP Server" width="800" />
+  <img src="https://raw.githubusercontent.com/Sunwood-ai-labs/omikuji-mcp-server/refs/heads/master/assets/header.svg" alt="Omikuji MCP Server" width="800" />
 </div>
 
 # 🎋 おみくじMCPサーバー
