@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ECDC4;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slideIn {
+        from { transform: translateX(-50px); }
+        to { transform: translateX(0); }
+      }
+      @keyframes gradientFlow {
+        0% { stop-color: #FF6B6B; }
+        50% { stop-color: #4ECDC4; }
+        100% { stop-color: #FF6B6B; }
+      }
+      .title { animation: fadeIn 2s ease-in-out, slideIn 1s ease-out; }
+      .subtitle { animation: fadeIn 3s ease-in-out; }
+      .fortune-symbol { animation: fadeIn 2.5s ease-in-out; }
+    </style>
+  </defs>
+  
+  <rect x="10" y="10" width="780" height="180" rx="20" ry="20" 
+        fill="url(#headerGradient)" />
+  
+  <text x="400" y="80" text-anchor="middle" 
+        class="title"
+        fill="white" 
+        font-family="Arial, sans-serif" 
+        font-size="48" 
+        font-weight="bold">
+    Omikuji MCP Server
+  </text>
+  
+  <text x="400" y="120" text-anchor="middle" 
+        class="subtitle"
+        fill="white" 
+        font-family="Arial, sans-serif" 
+        font-size="20">
+    Discover your fortune through Model Context Protocol
+  </text>
+  
+  <text x="400" y="160" text-anchor="middle" 
+        class="fortune-symbol"
+        fill="white" 
+        font-family="Arial, sans-serif" 
+        font-size="24">
+    🎋 運勢を占う 🎋
+  </text>
+</svg>
