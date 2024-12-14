@@ -1,26 +1,38 @@
 {
-  "name": "omikuji-server",
-  "version": "0.1.0",
-  "description": "A Model Context Protocol server",
-  "private": true,
+  "name": "@sunwood-ai-labs/omikuji-mcp-server",
+  "version": "1.0.0",
+  "description": "おみくじを提供するMCPサーバー",
+  "main": "build/index.js",
   "type": "module",
-  "bin": {
-    "omikuji-server": "./build/index.js"
-  },
-  "files": [
-    "build"
-  ],
   "scripts": {
     "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
     "prepare": "npm run build",
-    "watch": "tsc --watch",
-    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+    "start": "node build/index.js"
   },
+  "keywords": [
+    "mcp",
+    "omikuji",
+    "fortune",
+    "japanese"
+  ],
+  "author": "Sunwood AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunwood-ai-labs/omikuji-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sunwood-ai-labs/omikuji-mcp-server/issues"
+  },
+  "homepage": "https://github.com/Sunwood-ai-labs/omikuji-mcp-server#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "0.6.0"
+    "@modelcontextprotocol/sdk": "^0.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.24",
-    "typescript": "^5.3.3"
-  }
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "build",
+    "README.md"
+  ]
 }
